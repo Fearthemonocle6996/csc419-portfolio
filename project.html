@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>QuickBite | Project details | Leonard</title>
+  <meta name="description" content="Project details for QuickBite, a JavaFX cafeteria ordering application.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Zilla+Slab:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <nav class="nav" aria-label="Main navigation">
+      <a class="brand" href="index.html">Leonard<span class="brand-dot">.</span></a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="nav-links">Menu</button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html#about">About</a></li>
+        <li><a href="index.html#projects">Projects</a></li>
+        <li><a class="nav-cta" href="index.html#contact">Get in touch</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <article class="detail">
+      <div class="wrap">
+        <a class="back" href="index.html#projects">&larr; Back to projects</a>
+
+        <header class="detail-head">
+          <p class="label">Project 01 / Case study</p>
+          <h1>QuickBite</h1>
+          <p class="hero-lead">A cafeteria ordering app that replaces the counter queue with a few clicks.</p>
+          <dl class="facts">
+            <div><dt>Type</dt><dd>Desktop application</dd></div>
+            <div><dt>Built with</dt><dd>Java, JavaFX</dd></div>
+            <div><dt>Role</dt><dd>Developer</dd></div>
+          </dl>
+          <div class="btn-row">
+            <a class="btn btn-primary" href="https://github.com/REPLACE_GITHUB_USER/REPLACE_REPO_QUICKBITE" target="_blank" rel="noopener">View source code</a>
+          </div>
+        </header>
+
+        <section class="prose" aria-labelledby="overview">
+          <h2 id="overview"><span>01</span> Full description</h2>
+          <!-- REPLACE: check this paragraph matches what you actually built -->
+          <p>QuickBite is a JavaFX application for ordering food from a campus cafeteria. A student opens the app, browses the menu, adds items to an order, reviews the total and submits it. The cafeteria gets a clear list of what to prepare instead of a crowd shouting orders over a counter.</p>
+          <p>I built it as an object-oriented project, so menu items, orders and users are modelled as separate classes with clear responsibilities, and the interface is kept apart from the logic behind it.</p>
+        </section>
+
+        <section class="prose" aria-labelledby="problem">
+          <h2 id="problem"><span>02</span> The problem I solved</h2>
+          <!-- REPLACE: adjust to the real problem you were solving -->
+          <p>Cafeteria queues waste time at peak hours, and orders taken verbally get mixed up. Students want to know what is available and what it costs before they reach the front. QuickBite moves ordering onto a screen so the menu, the prices and the order total are visible up front and mistakes are easier to catch.</p>
+        </section>
+
+        <section class="prose" aria-labelledby="features">
+          <h2 id="features"><span>03</span> Features</h2>
+          <!-- REPLACE: keep only the features that really exist in your app -->
+          <ul class="feature-list">
+            <li>Browse the cafeteria menu with item names and prices</li>
+            <li>Add and remove items from an order</li>
+            <li>Live order total as the order changes</li>
+            <li>Order summary before submitting</li>
+            <li>Desktop interface built with JavaFX</li>
+          </ul>
+        </section>
+
+        <section class="prose wide" aria-labelledby="screens">
+          <h2 id="screens"><span>04</span> Screenshots</h2>
+          <div class="shots">
+            <figure>
+              <img src="images/quickbite-home.png" alt="QuickBite home screen showing the cafeteria menu" width="1200" height="750" loading="lazy">
+              <figcaption>Menu screen</figcaption>
+            </figure>
+            <figure>
+              <img src="images/quickbite-cart.png" alt="QuickBite order screen listing selected items and the total" width="1200" height="750" loading="lazy">
+              <figcaption>Order and total</figcaption>
+            </figure>
+            <figure>
+              <img src="images/quickbite-summary.png" alt="QuickBite order summary before submitting" width="1200" height="750" loading="lazy">
+              <figcaption>Order summary</figcaption>
+            </figure>
+          </div>
+        </section>
+
+        <section class="prose" aria-labelledby="tech">
+          <h2 id="tech"><span>05</span> Technologies used</h2>
+          <ul class="tags" aria-label="Technologies used">
+            <li>Java</li>
+            <li>JavaFX</li>
+            <li>Object-oriented design</li>
+            <li>Git and GitHub</li>
+          </ul>
+        </section>
+
+        <section class="prose" aria-labelledby="learned">
+          <h2 id="learned"><span>06</span> What I learned</h2>
+          <!-- REPLACE: write these in your own words, they should be true to your experience -->
+          <ul class="feature-list">
+            <li>How to structure a JavaFX application so the screens and the logic stay separate.</li>
+            <li>Why object-oriented design makes a project easier to extend and defend.</li>
+            <li>How much easier debugging is when each class does one job.</li>
+            <li>That a clear, simple interface matters more than extra features.</li>
+          </ul>
+        </section>
+      </div>
+    </article>
+
+    <section class="cta" id="contact" aria-labelledby="contact-title">
+      <div class="wrap">
+        <p class="label">Contact</p>
+        <h2 id="contact-title">Like what you see? Let's talk.</h2>
+        <div class="btn-row">
+          <a class="btn btn-primary" href="mailto:REPLACE_EMAIL?subject=Hello%20Leonard">Email me</a>
+          <a class="btn" href="https://wa.me/REPLACE_WHATSAPP?text=Hi%20Leonard%2C%20I%20saw%20your%20portfolio" target="_blank" rel="noopener">Chat on WhatsApp</a>
+          <a class="btn" href="index.html#projects">More projects</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-row">
+      <p>&copy; <span id="year">2026</span> Leonard. Built by hand with HTML, CSS and JavaScript.</p>
+      <p>Pan-Atlantic University / CSC 419</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

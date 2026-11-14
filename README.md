@@ -6,8 +6,8 @@
 
 ## Student details
 
-- **Name:** REPLACE_FULL_NAME
-- **Matric number:** REPLACE_MATRIC_NUMBER
+- **Name:** Okolie Leonard Chiedu
+- **Matric number:** 23120112040
 
 ## Live site
 

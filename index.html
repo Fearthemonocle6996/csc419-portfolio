@@ -1,169 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Leonard | Software Engineering Student, Lagos</title>
-  <meta name="description" content="Portfolio of Leonard, a 300-level Software Engineering student at Pan-Atlantic University in Lagos, Nigeria.">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Zilla+Slab:wght@400;500;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Okolie Leonard | Portfolio</title>
+<meta name="description" content="Portfolio of Okolie Leonard, computer science student and web developer.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;600&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,600;1,6..72,400&display=swap" rel="stylesheet">
+<script>try{document.documentElement.dataset.theme=localStorage.getItem("theme")||(matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light")}catch(e){}</script>
+<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-
-  <header class="site-header">
-    <nav class="nav" aria-label="Main navigation">
-      <a class="brand" href="index.html">Leonard<span class="brand-dot">.</span></a>
-      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="nav-links">Menu</button>
-      <ul class="nav-links" id="nav-links">
-        <li><a href="#about">About</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a class="nav-cta" href="#contact">Get in touch</a></li>
+<div class="progress" id="progress" aria-hidden="true"></div>
+<header class="site-header">
+  <div class="wrap bar">
+    <a class="brand" href="index.html">Okolie Leonard</a>
+    <div class="tools"><button class="theme-btn" id="theme-btn" type="button">Dark mode</button>
+    <button class="menu-btn" id="menu-btn" aria-expanded="false" aria-controls="nav">Menu</button></div>
+    <nav id="nav" aria-label="Main">
+      <ul>
+        <li><a href="index.html#about">About</a></li>
+        <li><a href="index.html#projects">Projects</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
       </ul>
     </nav>
-  </header>
+  </div>
+</header>
+<main>
+<section class="hero wrap">
+  <h1>Okolie Leonard</h1>
+  <p class="lead">Computer science student building web software that replaces slow, manual processes with tools people can actually use.</p>
+  <p class="actions"><a class="btn" href="#contact">Get in touch</a> <a class="btn ghost" href="#projects">See my projects</a></p>
+</section>
 
-  <main>
-
-    <!-- HERO -->
-    <section class="hero" aria-labelledby="hero-title">
-      <div class="wrap">
-        <p class="label">Logbook / Lagos, Nigeria</p>
-        <h1 id="hero-title">I turn course briefs into software that <span class="mark">actually runs</span>.</h1>
-        <p class="hero-lead">Software Engineering student at Pan-Atlantic University. I build desktop apps, backends and web interfaces, and I care about code another person can read without pain.</p>
-        <div class="btn-row">
-          <a class="btn btn-primary" href="#contact">Get in touch</a>
-          <a class="btn" href="#projects">See my work</a>
-        </div>
-
-        <ol class="contents" aria-label="On this page">
-          <li><a href="#about"><span>01</span> About me</a></li>
-          <li><a href="#projects"><span>02</span> Projects</a></li>
-          <li><a href="#contact"><span>03</span> Contact</a></li>
-        </ol>
-      </div>
-    </section>
-
-    <!-- ABOUT -->
-    <section class="section" id="about" aria-labelledby="about-title">
-      <div class="wrap section-grid">
-        <div class="section-head">
-          <p class="label">01</p>
-          <h2 id="about-title">About me</h2>
-        </div>
-        <div class="about">
-          <div class="about-text">
-            <h3>Who I am</h3>
-            <p>I'm Leonard, a 300-level Software Engineering student at Pan-Atlantic University, based in Lagos. I like understanding how a thing works before I build on top of it.</p>
-            <h3>What I do</h3>
-            <p>I design and build software end to end: JavaFX desktop apps, REST backends with role-based access, and group projects where requirements change halfway through. I also write test plans and document my work.</p>
-            <h3>What I'm focused on</h3>
-            <p>Object-oriented design, backend development with TypeScript, software testing and quality assurance, and clean interfaces. Right now I'm sharpening my web and mobile skills in CSC 419.</p>
-          </div>
-          <dl class="spec">
-            <div><dt>Name</dt><dd>Leonard</dd></div>
-            <div><dt>Studying</dt><dd>Software Engineering, 300 level</dd></div>
-            <div><dt>School</dt><dd>Pan-Atlantic University</dd></div>
-            <div><dt>Based in</dt><dd>Lagos, Nigeria</dd></div>
-            <div><dt>Works with</dt><dd>Java, JavaFX, TypeScript, Node.js, Express, Prisma, Python</dd></div>
-          </dl>
-        </div>
-      </div>
-    </section>
-
-    <!-- PROJECTS -->
-    <section class="section" id="projects" aria-labelledby="projects-title">
-      <div class="wrap section-grid">
-        <div class="section-head">
-          <p class="label">02</p>
-          <h2 id="projects-title">Projects</h2>
-        </div>
-        <div class="projects">
-
-          <article class="project">
-            <figure class="shot">
-              <img src="images/quickbite-home.png" alt="QuickBite home screen showing the cafeteria menu" width="1200" height="750" loading="lazy">
-            </figure>
-            <div class="project-body">
-              <p class="label">Project 01</p>
-              <h3>QuickBite</h3>
-              <p>A cafeteria ordering app that lets students browse the menu, build an order and submit it without queueing at the counter.</p>
-              <ul class="tags" aria-label="Tech stack">
-                <li>Java</li>
-                <li>JavaFX</li>
-              </ul>
-              <div class="project-links">
-                <a class="btn btn-small btn-primary" href="project.html">View details</a>
-                <a class="btn btn-small" href="https://github.com/Fearthemonocle6996/REPLACE_REPO_QUICKBITE" target="_blank" rel="noopener">Source code</a>
-              </div>
-            </div>
-          </article>
-
-          <article class="project">
-            <figure class="shot">
-              <img src="images/sante-lims.png" alt="Sante Diagnostics laboratory information management system dashboard" width="1200" height="750" loading="lazy">
-            </figure>
-            <div class="project-body">
-              <p class="label">Project 02</p>
-              <h3>Sante Diagnostics LIMS</h3>
-              <p>A laboratory information management system built with my group (Group 12) for the SEng 300L project, covering how a diagnostics lab tracks samples and results.</p>
-              <ul class="tags" aria-label="Tech stack">
-                <li>REPLACE_STACK_ITEM_1</li>
-                <li>REPLACE_STACK_ITEM_2</li>
-              </ul>
-              <div class="project-links">
-                <a class="btn btn-small" href="https://github.com/Fearthemonocle6996/REPLACE_REPO_LIMS" target="_blank" rel="noopener">Source code</a>
-              </div>
-            </div>
-          </article>
-
-          <article class="project">
-            <figure class="shot">
-              <img src="images/rbac-backend.png" alt="Role-based access control backend API in use" width="1200" height="750" loading="lazy">
-            </figure>
-            <div class="project-body">
-              <p class="label">Project 03</p>
-              <h3>RBAC Backend</h3>
-              <p>A role-based access control API that decides which users can do what, with permissions enforced on the server rather than trusted from the client.</p>
-              <ul class="tags" aria-label="Tech stack">
-                <li>Express</li>
-                <li>TypeScript</li>
-                <li>Prisma</li>
-              </ul>
-              <div class="project-links">
-                <a class="btn btn-small" href="https://github.com/Fearthemonocle6996/REPLACE_REPO_RBAC" target="_blank" rel="noopener">Source code</a>
-              </div>
-            </div>
-          </article>
-
-        </div>
-      </div>
-    </section>
-
-    <!-- CALL TO ACTION -->
-    <section class="cta" id="contact" aria-labelledby="contact-title">
-      <div class="wrap">
-        <p class="label">03 / Contact</p>
-        <h2 id="contact-title">Have something to build? Let's talk.</h2>
-        <p class="cta-lead">Internship, collaboration or a project idea: send a message and I'll reply as soon as I can.</p>
-        <div class="btn-row">
-          <a class="btn btn-primary" href="mailto:okolieleonard2@gmail.com?subject=Hello%20Leonard">Email me</a>
-          <a class="btn" href="https://wa.me/2349029886620?text=Hi%20Leonard%2C%20I%20saw%20your%20portfolio" target="_blank" rel="noopener">Chat on WhatsApp</a>
-          <a class="btn" href="https://github.com/REPLACE_GITHUB_USER" target="_blank" rel="noopener">GitHub</a>
-        </div>
-      </div>
-    </section>
-
-  </main>
-
-  <footer class="site-footer">
-    <div class="wrap footer-row">
-      <p>&copy; <span id="year">2026</span> Leonard. Built by hand with HTML, CSS and JavaScript.</p>
-      <p>Pan-Atlantic University / CSC 419</p>
+<section class="wrap block" id="about">
+  <h2>About me</h2>
+  <div class="cols">
+    <div>
+      <p>I’m a computer science student who likes building practical software: an ordering app for a cafeteria, a lab management system, and the access-control backend behind them.</p>
+      <p>I care most about projects that take over a paper or manual process and make it faster for the people who use it every day. I try to keep my code readable and my interfaces simple.</p>
     </div>
-  </footer>
+    <div>
+      <h3>Technical focus</h3>
+      <ul class="plain">
+        <li>Full-stack web development</li>
+        <li>Databases and data modelling</li>
+        <li>Role-based access control and backend design</li>
+        <li>Software for real organisations</li>
+      </ul>
+    </div>
+  </div>
+</section>
 
-  <script src="js/main.js"></script>
+<section class="wrap block" id="projects">
+  <h2>Projects</h2>
+  <div class="grid">
+    <article class="project">
+      <img src="images/quickbite-home.png" alt="QuickBite home screen" width="1200" height="750">
+      <h3>QuickBite</h3>
+      <p>A cafeteria ordering app that lets students browse the menu and place food orders from their phones, so they do not have to queue.</p>
+      <p class="stack"><strong>Stack:</strong> REPLACE_STACK_QUICKBITE</p>
+      <p class="actions">
+        <a class="btn small-btn" href="project.html">View details</a>
+        <!-- REPLACE_REPO_QUICKBITE: change this link to the repo URL once the project is on GitHub -->
+        <a class="btn small-btn ghost" href="https://github.com/Fearthemonocle6996">View on GitHub</a>
+      </p>
+    </article>
+    <article class="project">
+      <img src="images/lims-dashboard.png" alt="Sante Diagnostics LIMS dashboard" width="1200" height="750">
+      <h3>Sante Diagnostics LIMS</h3>
+      <p>A laboratory information management system for Sante Diagnostics that tracks samples, test requests and results in one place.</p>
+      <p class="stack"><strong>Stack:</strong> REPLACE_STACK_LIMS</p>
+      <p class="actions">
+        <!-- REPLACE_REPO_LIMS: change this link to the repo URL once the project is on GitHub -->
+        <a class="btn small-btn" href="https://github.com/Fearthemonocle6996">View on GitHub</a>
+      </p>
+    </article>
+  </div>
+</section>
+
+<section class="wrap block" id="contact">
+  <h2>Contact</h2>
+  <p>I’m open to internships, collaborations and freelance work. Email is the fastest way to reach me.</p>
+  <p class="actions">
+    <a class="btn" href="mailto:okolieleonard2@gmail.com">Email me</a>
+    <a class="btn ghost" href="https://wa.me/2349029886620">Message on WhatsApp</a>
+    <a class="btn ghost" href="https://github.com/Fearthemonocle6996">GitHub</a>
+    <button class="btn ghost" type="button" data-copy="okolieleonard2@gmail.com">Copy email</button>
+  </p>
+  <form id="contact-form" class="form" action="mailto:okolieleonard2@gmail.com" method="post" enctype="text/plain" novalidate>
+    <h3>Or send a message</h3>
+    <label for="f-name">Your name</label>
+    <input id="f-name" name="name" type="text" autocomplete="name" required>
+    <label for="f-email">Your email</label>
+    <input id="f-email" name="email" type="email" autocomplete="email" required>
+    <label for="f-msg">Message</label>
+    <textarea id="f-msg" name="message" rows="5" required></textarea>
+    <p class="error" id="form-error" role="alert"></p>
+    <button class="btn" type="submit">Send message</button>
+    <p class="small-note">This opens your email app with the message filled in.</p>
+  </form>
+</section>
+</main>
+<footer class="site-footer">
+  <div class="wrap">
+    <p class="foot-line">Have a project or an opportunity in mind?</p>
+    <p class="actions"><a class="btn" href="mailto:okolieleonard2@gmail.com">Get in touch</a>
+    <a class="btn ghost" href="https://wa.me/2349029886620">WhatsApp</a></p>
+    <p class="small">Okolie Leonard, matric no. 23120112040. CSC 419 portfolio.</p>
+  </div>
+</footer>
+<button class="to-top" id="to-top" type="button" aria-label="Back to top">Top</button>
+<p class="toast" id="toast" role="status" aria-live="polite"></p>
+<dialog id="lightbox"><img src="" alt=""><button type="button" class="btn small-btn" id="lb-close">Close</button></dialog>
+<script src="js/main.js"></script>
 </body>
 </html>
